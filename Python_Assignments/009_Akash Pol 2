@@ -1,0 +1,290 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[9, 6, 1, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def swapPositions(list, pos1, pos2): \n",
+    "      \n",
+    "    list[pos1], list[pos2] = list[pos2], list[pos1] \n",
+    "    return list\n",
+    "List = [4, 6, 1, 9] \n",
+    "pos1, pos2  = 1, 4\n",
+    "print(swapPositions(List, pos1-1, pos2-1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original List: ['c', 'c++', 'datastructure', 'OS', 'AWEP']\n",
+      "Reversed List: ['AWEP', 'OS', 'datastructure', 'c++', 'c']\n"
+     ]
+    }
+   ],
+   "source": [
+    "systems = ['c', 'c++', 'datastructure','OS','AWEP']\n",
+    "print('Original List:', systems)\n",
+    "systems.reverse()\n",
+    "print('Reversed List:', systems)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "336\n",
+      "24\n"
+     ]
+    }
+   ],
+   "source": [
+    "def multiplyList(myList) : \n",
+    "\n",
+    "    result = 1\n",
+    "    for a in myList: \n",
+    "         result = result * a \n",
+    "    return result  \n",
+    "list1 = [6, 8, 7]  \n",
+    "list2 = [3, 2, 4] \n",
+    "print(multiplyList(list1)) \n",
+    "print(multiplyList(list2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[55, 22, 33, 44, 11]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def swapList(list):     \n",
+    "    start, *middle, end = list\n",
+    "    list = [end, *middle, start]     \n",
+    "    return list\n",
+    "newList = [11, 22, 33, 44, 55] \n",
+    "  \n",
+    "print(swapList(newList)) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Largest number of the list is: 104\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [76, 50, 104, 25, 95]\n",
+    "print(\"Largest number of the list is:\", max(list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "None\n",
+      "{'d': 6, 'c': 4, 'a': 10, 'b': 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def Merge(dict1, dict2): \n",
+    "    return(dict2.update(dict1)) \n",
+    "dict1 = {'a': 10, 'b': 8} \n",
+    "dict2 = {'d': 6, 'c': 4} \n",
+    "   \n",
+    "print(Merge(dict1, dict2)) \n",
+    "  \n",
+    "print(dict2) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'A': 7, 'B': 2, 'C': 9, 'D': 1}\n",
+      "{'A': 7, 'C': 9, 'D': 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "myDict = {'A':7,'B':2,'C':9,'D':1}\n",
+    "print(myDict)\n",
+    "if 'B' in myDict: \n",
+    "    del myDict['B']\n",
+    "print(myDict)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('tuple', False, 3.2, 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "tuple = (\"tuple\", False, 3.2, 1)\n",
+    "print(tuple)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n"
+     ]
+    }
+   ],
+   "source": [
+    "tuple = ('p', 'y', 't', 'h', 'o', 'n')\n",
+    "str = ''.join(tuple)\n",
+    "print(str)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['p', 'y', 't', 'h', 'o', 'n', ' ', 'p', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g']\n",
+      "python programming\n"
+     ]
+    }
+   ],
+   "source": [
+    "charList = ['p','y','t','h','o','n',' ','p','r','o','g','r','a','m','m','i','n','g']\n",
+    "finalString = ''.join(charList)\n",
+    "print(charList)\n",
+    "print(finalString)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(6, 5, 5, 6, 2, 2, 2, 2, 6)\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "tuplex = 6, 5, 5, 6, 2, 2, 2, 2, 6 \n",
+    "print(tuplex)\n",
+    "count = tuplex.count(2)\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 'Red', 'yellow', 'pink']\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [1, 2, 3, 4]\n",
+    "list2 = ['Red', 'yellow', 'pink']\n",
+    "final_list = list1 + list2\n",
+    "print(final_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
